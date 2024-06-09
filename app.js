@@ -90,8 +90,8 @@ function displayUserNotes(){
         
         notes.forEach(function(data,index) {
             if(data.name === Username){
-                var liElement=`<li>${data.note}
-                            <p>${data.name}</p>
+                var liElement=`<li>${data.note}<br>
+                            <p> Written by <span class="bg-warning text-dark rounded px-2"> ${data.name}</span></p>
                             </li>
                             `;
             list.innerHTML+=liElement;
